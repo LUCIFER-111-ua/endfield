@@ -370,4 +370,120 @@ function getProducersText(producers) {
   align-items: center;
   gap: 0.5rem;
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .recipes-container {
+    padding: 0 0.5rem;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .settings-panel {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+  }
+
+  .setting-item {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .setting-item label {
+    font-size: 0.9rem;
+  }
+
+  .icon-size-slider {
+    flex: 1;
+    max-width: 150px;
+  }
+
+  .category-select {
+    font-size: 16px;
+    padding: 0.5rem;
+  }
+
+  .search-box {
+    font-size: 16px;
+    padding: 0.8rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .filter-tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .filter-tab {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    white-space: nowrap;
+  }
+
+  .recipe-group {
+    margin-bottom: 1rem;
+  }
+
+  .group-header {
+    padding: 0.6rem;
+  }
+
+  .group-name {
+    font-size: 1rem;
+  }
+
+  .group-content {
+    padding: 0.8rem;
+    gap: 0.8rem;
+  }
+
+  .recipe-card {
+    padding: 0.8rem;
+  }
+
+  .recipe-card h3 {
+    font-size: 0.95rem;
+  }
+
+  .recipe-ingredients {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .recipe-ingredient {
+    width: 100%;
+    padding: 0.4rem 0.6rem;
+  }
+
+  .recipe-ingredient img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .recipe-info {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    padding-top: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .recipe-card {
+    padding: 0.6rem;
+  }
+
+  .recipe-ingredient {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.85rem;
+  }
+}
 </style>

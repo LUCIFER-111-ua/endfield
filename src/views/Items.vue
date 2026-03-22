@@ -88,11 +88,164 @@ function getCategoryName(categoryId) {
 .items-container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 0.5rem;
 }
 
 .page-title {
   color: #e94560;
   margin-bottom: 1.5rem;
   font-size: 1.8rem;
+}
+
+.search-box {
+  margin-bottom: 1rem;
+}
+
+.search-box input {
+  width: 100%;
+  max-width: 400px;
+  padding: 0.75rem 1rem;
+  background: #0f3460;
+  border: 1px solid #0f3460;
+  color: #eee;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #e94560;
+}
+
+.category-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem;
+  background: #16213e;
+  border: 1px solid #0f3460;
+  color: #aaa;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.9rem;
+}
+
+.category-btn:hover {
+  border-color: #e94560;
+  color: #eee;
+}
+
+.category-btn.active {
+  background: #e94560;
+  border-color: #e94560;
+  color: #fff;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.item-card {
+  background: #16213e;
+  border: 1px solid #0f3460;
+  border-radius: 8px;
+  padding: 1rem;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.item-card:hover {
+  border-color: #e94560;
+  transform: translateY(-3px);
+}
+
+.item-card img {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 0.5rem;
+}
+
+.item-card h4 {
+  font-size: 0.9rem;
+  color: #eee;
+  margin-bottom: 0.25rem;
+}
+
+.item-card .category {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .items-container {
+    padding: 0 0.5rem;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+
+  .search-box input {
+    font-size: 16px;
+    padding: 0.8rem 1rem;
+  }
+
+  .category-filter {
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .category-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .item-card {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .item-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0.4rem;
+  }
+
+  .item-card h4 {
+    font-size: 0.8rem;
+  }
+
+  .item-card .category {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .items-grid {
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  }
+
+  .item-card img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .item-card {
+    padding: 0.5rem;
+  }
 }
 </style>

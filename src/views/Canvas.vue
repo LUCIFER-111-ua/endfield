@@ -1383,4 +1383,143 @@ function formatDate(timestamp) {
     font-size: 0.75rem;
   }
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .canvas-page {
+    top: 60px;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+    max-height: 40vh;
+    border-right: none;
+    border-bottom: 2px solid #0f3460;
+  }
+
+  .sidebar.collapsed {
+    width: 100%;
+    max-height: 40px;
+  }
+
+  .sidebar-content {
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .sidebar-header {
+    padding: 0.5rem;
+  }
+
+  .search-box {
+    padding: 0.5rem;
+  }
+
+  .search-box input {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  .category-tabs {
+    padding: 0.3rem;
+    gap: 0.2rem;
+  }
+
+  .category-tab {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .palette-grid {
+    grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .palette-item {
+    padding: 0.5rem;
+  }
+
+  .palette-item img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .palette-item span {
+    font-size: 0.6rem;
+  }
+
+  .canvas-wrapper {
+    flex: 1;
+    min-height: 60vh;
+  }
+
+  .toolbar {
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
+    max-width: none;
+    padding: 0.4rem;
+    gap: 0.3rem;
+  }
+
+  .tool-btn {
+    width: 32px;
+    height: 32px;
+  }
+
+  .info-panel {
+    top: auto;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+    max-width: none;
+    padding: 0.5rem;
+  }
+
+  .info-item {
+    font-size: 0.8rem;
+  }
+
+  .region-selector {
+    padding: 0.5rem;
+  }
+
+  .region-selector select {
+    font-size: 16px;
+    padding: 0.6rem;
+  }
+
+  .layout-controls {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .layout-controls button {
+    width: 100%;
+  }
+}
+
+/* 小屏幕手机 */
+@media (max-width: 480px) {
+  .palette-grid {
+    grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  }
+
+  .palette-item {
+    padding: 0.3rem;
+  }
+
+  .palette-item img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .toolbar {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 </style>

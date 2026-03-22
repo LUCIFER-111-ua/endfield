@@ -981,4 +981,120 @@ if (typeof document !== 'undefined') {
     grid-template-columns: 1fr;
   }
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .calculator-container {
+    padding: 1rem 0.5rem;
+  }
+
+  .calculator-header {
+    margin-bottom: 1rem;
+  }
+
+  .calculator-header h2 {
+    font-size: 1.3rem;
+  }
+
+  .calculator-content {
+    padding: 1rem;
+  }
+
+  .input-group {
+    margin-bottom: 1rem;
+  }
+
+  .input-group label {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .input-group input,
+  .input-group select {
+    font-size: 16px;
+    padding: 0.8rem;
+  }
+
+  .add-button {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+  }
+
+  .product-card {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .product-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .product-header h3 {
+    font-size: 1.1rem;
+  }
+
+  .remove-btn {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .step-list {
+    margin-top: 1rem;
+  }
+
+  .step-item {
+    padding: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .step-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .step-item p {
+    font-size: 0.85rem;
+  }
+
+  .result-card {
+    padding: 1rem;
+  }
+
+  .result-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .result-summary {
+    padding: 1rem;
+  }
+
+  .result-summary h4 {
+    font-size: 1rem;
+  }
+
+  .summary-grid {
+    gap: 0.5rem;
+  }
+
+  .summary-item {
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .calculator-content {
+    padding: 0.8rem;
+  }
+
+  .product-card {
+    padding: 0.8rem;
+  }
+
+  .summary-item {
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+}
 </style>

@@ -90,4 +90,48 @@ const loadingText = computed(() => {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+@media (max-width: 768px) {
+  .loading-spinner {
+    width: 50px;
+    height: 50px;
+    border-width: 3px;
+  }
+
+  .loading-text {
+    font-size: 1rem;
+    margin-top: 0.8rem;
+  }
+
+  .loading-file {
+    font-size: 0.8rem;
+    margin-top: 0.4rem;
+    max-width: 90%;
+    text-align: center;
+  }
+
+  .loading-progress {
+    width: 180px;
+    margin-top: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .loading-spinner {
+    width: 40px;
+    height: 40px;
+  }
+
+  .loading-text {
+    font-size: 0.95rem;
+  }
+
+  .loading-file {
+    font-size: 0.75rem;
+  }
+
+  .loading-progress {
+    width: 150px;
+  }
+}
 </style>

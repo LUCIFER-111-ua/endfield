@@ -56,4 +56,29 @@ onMounted(() => {
 .contact-text::before {
   content: '📧 ';
 }
+
+@media (max-width: 768px) {
+  .welcome-banner {
+    padding: 0.6rem 1rem;
+  }
+
+  .welcome-text {
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .contact-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 0.95rem;
+  }
+
+  .contact-text {
+    font-size: 0.8rem;
+  }
+}
 </style>

@@ -172,4 +172,80 @@ kbd {
     grid-template-columns: 1fr;
   }
 }
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .guide-container {
+    padding: 0 0.5rem;
+  }
+
+  .page-title {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .guide-content {
+    gap: 1.5rem;
+  }
+
+  .guide-section {
+    padding: 1rem;
+  }
+
+  .guide-section h2 {
+    font-size: 1.1rem;
+  }
+
+  .guide-section p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .guide-section ul {
+    font-size: 0.9rem;
+    gap: 0.5rem;
+  }
+
+  .guide-section li {
+    font-size: 0.9rem;
+  }
+
+  .shortcut-grid {
+    gap: 0.8rem;
+  }
+
+  .shortcut-item {
+    padding: 0.6rem 0.8rem;
+  }
+
+  kbd {
+    font-size: 0.85rem;
+    padding: 0.2rem 0.4rem;
+    min-width: 50px;
+  }
+
+  .shortcut-item span {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .guide-section {
+    padding: 0.8rem;
+  }
+
+  .guide-section h2 {
+    font-size: 1rem;
+  }
+
+  .guide-section p,
+  .guide-section li {
+    font-size: 0.85rem;
+  }
+
+  kbd {
+    font-size: 0.8rem;
+    padding: 0.15rem 0.3rem;
+  }
+}
 </style>
