@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="88dee565-c205-45d9-8b47-4e5fc1a38570" name="更改" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calculator.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/canvas.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Calculator-4SeFrEpX.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Calculator-Bh0Mh71M.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Calculator-DBJ3W0H3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Calculator-z4TCKJ7S.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Canvas-BkHBbNRe.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Canvas-Cwe2zU6P.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Canvas-D8xKmVTy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Canvas-h3YDETRo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Guide-BVdsp96r.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Guide-DMrRj-gl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Guide-sEVU7y9A.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Items-B_TvbcrF.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Items-BnoPEM8x.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Items-CGms9vlk.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Recipes-CmtfmvHD.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Recipes-CzTXkW0T.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Recipes-DvJdwMJf.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/Recipes-GZmHDWtz.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-BKaJi6a6.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-DmTbhZbY.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/assets/index-r_JHZQ1g.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/guide.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/items.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/recipes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/i18n.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Calculator.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Calculator.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Canvas.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Canvas.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/Recipes.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Recipes.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="3BDLUJ8jpWrp23wQN5Q02wc45Il" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/OpenClaw/.openclaw/workspace/endfield-frontend&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-495700d161d3-aa17d162503b-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-243.22562.220" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="88dee565-c205-45d9-8b47-4e5fc1a38570" name="更改" comment="" />
+      <created>1774018708193</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774018708193</updated>
+    </task>
+    <servers />
+  </component>
+</project>
