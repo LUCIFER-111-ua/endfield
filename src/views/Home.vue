@@ -1,5 +1,10 @@
 <template>
   <div class="home-container">
+    <div class="welcome-text">
+      <p class="welcome-line">欢迎使用终末地基建模拟器</p>
+      <p class="contact-line">如有疑问和建议请联系 Q：2685224331</p>
+    </div>
+    
     <h1 class="home-title">{{ i18n.t('home.title') }}</h1>
     <p class="home-subtitle">{{ i18n.t('app.subtitle') }}</p>
 
@@ -86,6 +91,23 @@ const machineCount = computed(() => {
 .home-container {
   text-align: center;
   padding: 2rem 0;
+}
+
+.welcome-text {
+  margin-bottom: 1.5rem;
+}
+
+.welcome-line {
+  font-size: 1.3rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.contact-line {
+  font-size: 1rem;
+  color: #aaa;
+  margin: 0;
 }
 
 .home-title {
