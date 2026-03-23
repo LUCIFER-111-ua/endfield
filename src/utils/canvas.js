@@ -639,21 +639,20 @@ export class GameCanvas {
     const gridSize = this.gridSize * this.zoom
     
     // 协议核心和次级协议核心：9×9 大小
-    // 输入口：左侧 7 个，右侧 7 个，都从中间向两侧排布
-    // 输出口：上侧 3 个，下侧 3 个
+    // 输出口：左侧 3 个，右侧 3 个（从中间向两侧排布）
+    // 输入口：上侧 7 个，下侧 7 个
     
     // 计算中心线
     const centerX = pos.x + totalWidth / 2
     const centerY = pos.y + totalHeight / 2
     
-    // 输入口位置计算（左右两侧）
-    // 9 格设备，输入口在第 2-8 行（共 7 个）
-    // 每个网格的中心位置 = pos + (格索引 + 0.5) * gridSize
+    // 输出口位置计算（左右两侧）
+    // 3 个输出口，均匀分布在中间区域
+    const outputRows = [2, 4, 6] // 第 3、5、7 行（中间区域）
     
-    // 左侧输入口（绿色）- 7 个，在第 2-8 行
-    this.ctx.fillStyle = '#4ade80'
-    const inputRows = [1, 2, 3, 4, 5, 6, 7] // 第 2-8 行（索引 1-7）
-    inputRows.forEach(rowIndex => {
+    // 左侧输出口（蓝色）- 3 个
+    this.ctx.fillStyle = '#60a5fa'
+    outputRows.forEach(rowIndex => {
       const y = pos.y + (rowIndex + 0.5) * gridSize
       this.ctx.fillRect(
         pos.x - portSize / 2,
@@ -663,8 +662,8 @@ export class GameCanvas {
       )
     })
     
-    // 右侧输入口（绿色）- 7 个（与左侧对称）
-    inputRows.forEach(rowIndex => {
+    // 右侧输出口（蓝色）- 3 个（与左侧对称）
+    outputRows.forEach(rowIndex => {
       const y = pos.y + (rowIndex + 0.5) * gridSize
       this.ctx.fillRect(
         pos.x + totalWidth - portSize / 2,
@@ -674,13 +673,14 @@ export class GameCanvas {
       )
     })
     
-    // 输出口位置计算（上下两侧）
-    // 3 个输出口，均匀分布在中间区域
-    const outputCols = [1, 4, 7] // 第 2、5、8 列
+    // 输入口位置计算（上下两侧）
+    // 9 格设备，输入口在第 2-8 列（共 7 个）
+    // 每个网格的中心位置 = pos + (格索引 + 0.5) * gridSize
     
-    // 上侧输出口（蓝色）
-    this.ctx.fillStyle = '#60a5fa'
-    outputCols.forEach(colIndex => {
+    // 上侧输入口（绿色）- 7 个，在第 2-8 列
+    this.ctx.fillStyle = '#4ade80'
+    const inputCols = [1, 2, 3, 4, 5, 6, 7] // 第 2-8 列（索引 1-7）
+    inputCols.forEach(colIndex => {
       const x = pos.x + (colIndex + 0.5) * gridSize
       this.ctx.fillRect(
         x - portSize / 2,
@@ -690,8 +690,8 @@ export class GameCanvas {
       )
     })
     
-    // 下侧输出口（蓝色）
-    outputCols.forEach(colIndex => {
+    // 下侧输入口（绿色）- 7 个（与上侧对称）
+    inputCols.forEach(colIndex => {
       const x = pos.x + (colIndex + 0.5) * gridSize
       this.ctx.fillRect(
         x - portSize / 2,
