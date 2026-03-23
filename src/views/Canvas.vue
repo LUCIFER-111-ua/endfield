@@ -2,10 +2,6 @@
   <div class="canvas-page">
     <!-- 侧边栏 -->
     <aside class="sidebar" :class="{ collapsed: sidebarCollapsed }">
-      <button class="sidebar-toggle" @click="sidebarCollapsed = !sidebarCollapsed" title="折叠/展开">
-        {{ sidebarCollapsed ? '▶' : '◀' }}
-      </button>
-
       <div v-if="!sidebarCollapsed" class="sidebar-content">
         <div class="sidebar-header">
           <h3>📦 物品栏</h3>
@@ -181,7 +177,15 @@
         </div>
         <div class="selection-actions">
           <button class="action-btn secondary" @click="rotateSelectedItem">🔄 旋转</button>
-          <button class="action-btn" @click="deleteSelectedItem">🗑️ 删除</button>
+          <button 
+            class="action-btn" 
+            :class="{ disabled: isSelectedItemNotDeletable }"
+            :disabled="isSelectedItemNotDeletable"
+            :title="isSelectedItemNotDeletable ? '该设备不可删除' : '删除选中物品'"
+            @click="deleteSelectedItem"
+          >
+            🗑️ 删除
+          </button>
         </div>
       </div>
 
@@ -196,15 +200,20 @@
       </div>
     </div>
 
+    <!-- 左侧折叠按钮 -->
+    <button class="sidebar-toggle" @click="sidebarCollapsed = !sidebarCollapsed" title="折叠/展开">
+      {{ sidebarCollapsed ? '▶' : '◀' }}
+    </button>
+
     <!-- 右侧侧边栏 -->
     <aside class="right-sidebar" :class="{ collapsed: rightSidebarCollapsed }">
-      <button class="sidebar-toggle right" @click="rightSidebarCollapsed = !rightSidebarCollapsed" title="折叠/展开">
-        {{ rightSidebarCollapsed ? '◀' : '▶' }}
-      </button>
-
       <div v-if="!rightSidebarCollapsed" class="sidebar-content right">
         <!-- 标签页切换 -->
         <div class="sidebar-tabs">
+          <div class="sidebar-tab" :class="{ active: rightTab === 'blueprint' }" @click="rightTab = 'blueprint'" title="蓝图选择">
+            <span class="tab-icon">📐</span>
+            <span class="tab-label">蓝图</span>
+          </div>
           <div class="sidebar-tab" :class="{ active: rightTab === 'recipe' }" @click="rightTab = 'recipe'" title="配方查询">
             <span class="tab-icon">📖</span>
             <span class="tab-label">配方</span>
@@ -224,7 +233,34 @@
         </div>
 
         <!-- 标签页内容 -->
-        <transition name="tab-fade" mode="out-in" appear>
+        <transition name="tab-fade" appear>
+          <!-- 蓝图选择标签页 -->
+          <div v-if="rightTab === 'blueprint'" key="blueprint" class="tab-content blueprint-tab">
+            <div class="tab-header">
+              <h4>📐 蓝图选择</h4>
+            </div>
+            <div class="blueprint-list">
+              <div
+                v-for="blueprint in blueprints"
+                :key="blueprint.id"
+                class="blueprint-item"
+                :class="{ selected: selectedBlueprint?.id === blueprint.id }"
+                @click="selectBlueprint(blueprint)"
+              >
+                <h5>{{ blueprint.name }}</h5>
+                <p>{{ blueprint.description }}</p>
+                <div class="blueprint-stats">
+                  <span>设备：{{ blueprint.machineCount }}</span>
+                  <span>功耗：{{ blueprint.power }}kW</span>
+                </div>
+              </div>
+              <div v-if="blueprints.length === 0" class="empty-state">
+                <p>暂无蓝图</p>
+                <p class="hint">点击工具栏的📐按钮创建新蓝图</p>
+              </div>
+            </div>
+          </div>
+
           <!-- 配方查询标签页 -->
           <div v-if="rightTab === 'recipe'" key="recipe" class="tab-content recipe-tab">
             <div class="tab-header">
@@ -407,6 +443,11 @@
       </div>
     </aside>
 
+    <!-- 右侧折叠按钮 -->
+    <button class="sidebar-toggle right" @click="rightSidebarCollapsed = !rightSidebarCollapsed" title="折叠/展开">
+      {{ rightSidebarCollapsed ? '◀' : '▶' }}
+    </button>
+
     <!-- 配方详情面板 -->
     <div v-if="showRecipePanel" class="overlay" @click="showRecipePanel = false"></div>
     <div v-if="showRecipePanel" class="recipe-detail-panel">
@@ -551,7 +592,7 @@ const gameCanvas = ref(null)
 // UI 状态
 const sidebarCollapsed = ref(false)
 const rightSidebarCollapsed = ref(false)
-const rightTab = ref('recipe')
+const rightTab = ref('blueprint')
 const itemSearch = ref('')
 const recipeSearch = ref('')
 const selectedCategory = ref('machine')
@@ -634,6 +675,11 @@ const filteredItems = computed(() => {
   return items.filter(item =>
     ['machine', 'belt-and-pipe', 'logistics', 'gen-power'].includes(item.category)
   )
+})
+
+// 判断选中的物品是否不可删除
+const isSelectedItemNotDeletable = computed(() => {
+  return selectedItem.value?.machine?.deletable === false
 })
 
 const placedCount = computed(() => {
@@ -788,6 +834,14 @@ onUnmounted(() => {
   if (gameCanvas.value) {
     gameCanvas.value.destroy()
   }
+})
+
+// 监听侧边栏收起/展开，触发画布自适应
+watch([sidebarCollapsed, rightSidebarCollapsed], () => {
+  // 延迟触发，等待侧边栏动画完成
+  setTimeout(() => {
+    window.dispatchEvent(new Event('resize'))
+  }, 300)
 })
 
 function initCanvas() {
@@ -990,6 +1044,11 @@ function rotateSelectedItem() {
 
 function deleteSelectedItem() {
   if (selectedItem.value && gameCanvas.value) {
+    // 检查设备是否可删除
+    if (selectedItem.value.machine?.deletable === false) {
+      return
+    }
+    
     const index = gameCanvas.value.layers.machines.indexOf(selectedItem.value)
     if (index !== -1) {
       gameCanvas.value.layers.machines.splice(index, 1)
@@ -1026,6 +1085,10 @@ function loadBlueprints() {
   if (saved) {
     blueprints.value = JSON.parse(saved)
   }
+}
+
+function selectBlueprint(blueprint) {
+  selectedBlueprint.value = blueprint
 }
 
 function loadSavedLayouts() {
@@ -1157,17 +1220,21 @@ function getCategoryName(category) {
 /* 侧边栏 */
 .sidebar {
   width: 280px;
+  min-width: 280px;
   background: #16213e;
   border-right: 2px solid #0f3460;
   display: flex;
   flex-direction: column;
-  transition: width 0.3s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   z-index: 100;
+  overflow: hidden;
 }
 
 .sidebar.collapsed {
-  width: 40px;
+  width: 0;
+  min-width: 0;
+  border: none;
 }
 
 .sidebar.collapsed .sidebar-content {
@@ -1176,11 +1243,11 @@ function getCategoryName(category) {
 }
 
 .sidebar-toggle {
-  position: absolute;
-  right: -20px;
+  position: fixed;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
+  width: 24px;
   height: 60px;
   background: #e94560;
   border: none;
@@ -1188,10 +1255,15 @@ function getCategoryName(category) {
   cursor: pointer;
   border-radius: 0 4px 4px 0;
   font-size: 12px;
-  z-index: 100;
+  z-index: 200;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sidebar-toggle:hover {
+  width: 28px;
 }
 
 .sidebar-header {
@@ -1513,6 +1585,17 @@ function getCategoryName(category) {
   background: #ff6b6b;
 }
 
+.action-btn:disabled {
+  background: #4a5568;
+  color: #a0aec0;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.action-btn:disabled:hover {
+  background: #4a5568;
+}
+
 .action-btn.secondary {
   background: #0f3460;
 }
@@ -1680,6 +1763,7 @@ function getCategoryName(category) {
 /* 右侧侧边栏 */
 .right-sidebar {
   width: 360px;
+  min-width: 360px;
   background: linear-gradient(135deg, #16213e 0%, #0f3460 100%);
   border-left: 2px solid #1a3a5c;
   display: flex;
@@ -1688,10 +1772,14 @@ function getCategoryName(category) {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   z-index: 99;
   box-shadow: -4px 0 12px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
 }
 
 .right-sidebar.collapsed {
-  width: 40px;
+  width: 0;
+  min-width: 0;
+  border: none;
+  box-shadow: none;
 }
 
 .right-sidebar.collapsed .sidebar-content.right {
@@ -1700,25 +1788,15 @@ function getCategoryName(category) {
 }
 
 .sidebar-toggle.right {
-  left: -18px;
-  right: auto;
+  position: fixed;
+  right: 0;
+  left: auto;
   border-radius: 4px 0 0 4px;
-  width: 18px;
   background: linear-gradient(90deg, #e94560 0%, #c73e54 100%);
-  border: none;
-  color: #fff;
-  cursor: pointer;
-  font-size: 10px;
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.2s;
 }
 
 .sidebar-toggle.right:hover {
-  width: 22px;
-  left: -22px;
+  width: 28px;
 }
 
 .sidebar-content.right {
@@ -2529,10 +2607,10 @@ function getCategoryName(category) {
   }
 
   .sidebar.collapsed {
-    width: 100%;
-    height: 40px;
-    min-height: 40px;
-    max-height: 40px;
+    height: 0;
+    min-height: 0;
+    max-height: 0;
+    border: none;
   }
 
   .sidebar-toggle {
@@ -2665,8 +2743,9 @@ function getCategoryName(category) {
   }
 
   .sidebar.collapsed {
-    width: 100%;
-    max-height: 40px;
+    height: 0;
+    max-height: 0;
+    border: none;
   }
 
   .sidebar-content {
