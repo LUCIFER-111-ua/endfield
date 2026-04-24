@@ -1,0 +1,2852 @@
+{
+  "production_chain": [
+    {
+      "recipe_id": "tools_proc_battery_2_1",
+      "machine": {
+        "building_id": "tools_assebling_mc_1",
+        "name": "封装机",
+        "size": "6x4x4",
+        "model_height": 2.9,
+        "power_consume": 30,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_cmpt",
+          "name_cn": "铁制零件",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_originium_powder",
+          "name_cn": "源石粉末",
+          "count": 20,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_proc_battery_2",
+          "name_cn": "中容电池",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_2_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_bottle",
+          "name_cn": "蓝铁瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_2",
+          "name_cn": "柑实粉末",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_2",
+          "name_cn": "优质柑实罐头",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_5_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_copper_jar",
+          "name_cn": "赤铜罐",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_plant_grass_2",
+          "name_cn": "芽针溶液",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_5",
+          "name_cn": "优质芽针针剂",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_2_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_bottle",
+          "name_cn": "蓝铁瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_1",
+          "name_cn": "荞花粉末",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_2",
+          "name_cn": "优质荞愈胶囊",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_5_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_copper_jar",
+          "name_cn": "赤铜罐",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_plant_grass_1",
+          "name_cn": "锦草溶液",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_5",
+          "name_cn": "优质锦草软饮",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "tools_proc_battery_1_1",
+      "machine": {
+        "building_id": "tools_assebling_mc_1",
+        "name": "封装机",
+        "size": "6x4x4",
+        "model_height": 2.9,
+        "power_consume": 30,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_glass_cmpt",
+          "name_cn": "紫晶零件",
+          "count": 5,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_originium_powder",
+          "name_cn": "源石粉末",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_proc_battery_1",
+          "name_cn": "低容电池",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_crystal_enr_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_enr_powder",
+          "name_cn": "致密晶体粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_enr",
+          "name_cn": "密制晶体",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "tools_proc_bomb_1_1",
+      "machine": {
+        "building_id": "tools_assebling_mc_1",
+        "name": "封装机",
+        "size": "6x4x4",
+        "model_height": 2.9,
+        "power_consume": 30,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_glass_cmpt",
+          "name_cn": "紫晶零件",
+          "count": 5,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_bbflower_powder_1",
+          "name_cn": "酮化灌木粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_proc_bomb_1",
+          "name_cn": "工业爆炸物",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_crystal_shell_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_originium_ore",
+          "name_cn": "源矿",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_shell",
+          "name_cn": "晶体外壳",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_crystal_shell_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_powder",
+          "name_cn": "晶体外壳粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_shell",
+          "name_cn": "晶体外壳",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_crystal_powder_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_originium_powder",
+          "name_cn": "源石粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_powder",
+          "name_cn": "晶体外壳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_crystal_powder_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_shell",
+          "name_cn": "晶体外壳",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_powder",
+          "name_cn": "晶体外壳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_moss_2_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_seed_2",
+          "name_cn": "柑实种子",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_2",
+          "name_cn": "柑实",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_moss_2_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_2",
+          "name_cn": "柑实",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_seed_2",
+          "name_cn": "柑实种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_moss_powder_2_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_2",
+          "name_cn": "柑实",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_powder_2",
+          "name_cn": "柑实粉末",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_1_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_glass_bottle",
+          "name_cn": "紫晶质瓶",
+          "count": 5,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_2",
+          "name_cn": "柑实粉末",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_1",
+          "name_cn": "柑实罐头",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_originium_powder_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_originium_ore",
+          "name_cn": "源矿",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_originium_powder",
+          "name_cn": "源石粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_sp_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_sp_1",
+          "name_cn": "灰芦麦",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_sp_seed_1",
+          "name_cn": "灰芦麦种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_sp_3",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_sp_3",
+          "name_cn": "琼叶参",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_sp_seed_3",
+          "name_cn": "琼叶参种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_moss_3_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_seed_3",
+          "name_cn": "砂叶种子",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_3",
+          "name_cn": "砂叶",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_moss_3_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_3",
+          "name_cn": "砂叶",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_seed_3",
+          "name_cn": "砂叶种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_moss_powder_3_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_3",
+          "name_cn": "砂叶",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 3
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_1",
+          "name_cn": "荞花",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_2",
+          "name_cn": "柑实",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_3",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_3",
+          "name_cn": "砂叶",
+          "count": 3,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_4",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_tundra_wood",
+          "name_cn": "原木",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_5",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_1",
+          "name_cn": "锦草",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_material_6",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_2",
+          "name_cn": "芽针",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_powder_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_powder_1",
+          "name_cn": "荞花粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_powder_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_powder_2",
+          "name_cn": "柑实粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_powder_3",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 3,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_powder_4",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_powder_1",
+          "name_cn": "锦草粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_powder_5",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_powder_2",
+          "name_cn": "芽针粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_carbon_powder_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_carbon_mtl",
+          "name_cn": "碳块",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_enr_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_carbon_enr_powder",
+          "name_cn": "致密碳粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_enr",
+          "name_cn": "稳定碳块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_3_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_bottle",
+          "name_cn": "钢质瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_enr_powder_2",
+          "name_cn": "细磨柑实粉末",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_3",
+          "name_cn": "精选柑实罐头",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_3_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_bottle",
+          "name_cn": "钢质瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_enr_powder_1",
+          "name_cn": "细磨荞花粉末",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_3",
+          "name_cn": "精选荞愈胶囊",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_quartz_powder_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_quartz_powder",
+          "name_cn": "紫晶粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_quartz_glass_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_sand",
+          "name_cn": "紫晶矿",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_quartz_glass_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_powder",
+          "name_cn": "紫晶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "winder_equip_script_1",
+      "machine": {
+        "building_id": "winder_1",
+        "name": "装备原件机",
+        "size": "6x4x4",
+        "model_height": 4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_shell",
+          "name_cn": "晶体外壳",
+          "count": 5,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_equip_script_1",
+          "name_cn": "紫晶装备原件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_glass_bottle_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 2,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_glass_bottle",
+          "name_cn": "紫晶质瓶",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "component_glass_cmpt_1",
+      "machine": {
+        "building_id": "component_mc_1",
+        "name": "配件机",
+        "size": "3x3x4",
+        "model_height": 3.5,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_glass",
+          "name_cn": "紫晶纤维",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_glass_cmpt",
+          "name_cn": "紫晶零件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_plant_moss_enr_powder_2_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_powder_2",
+          "name_cn": "柑实粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_enr_powder_2",
+          "name_cn": "细磨柑实粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_plant_moss_enr_powder_1_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_powder_1",
+          "name_cn": "荞花粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_enr_powder_1",
+          "name_cn": "细磨荞花粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_crystal_enr_powder_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_originium_enr_powder",
+          "name_cn": "致密源石粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_enr_powder",
+          "name_cn": "致密晶体粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_crystal_enr_powder_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_powder",
+          "name_cn": "晶体外壳粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_crystal_enr_powder",
+          "name_cn": "致密晶体粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_originium_enr_powder_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_originium_powder",
+          "name_cn": "源石粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_originium_enr_powder",
+          "name_cn": "致密源石粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_enr_powder_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_enr_powder_1",
+          "name_cn": "细磨荞花粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_enr_powder",
+          "name_cn": "致密碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_carbon_enr_powder_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_enr_powder_2",
+          "name_cn": "细磨柑实粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_enr_powder",
+          "name_cn": "致密碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_carbon_enr_powder_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_carbon_powder",
+          "name_cn": "碳粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_carbon_enr_powder",
+          "name_cn": "致密碳粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_iron_enr_powder_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_powder",
+          "name_cn": "蓝铁粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_enr_powder",
+          "name_cn": "致密蓝铁粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_grass_2_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_seed_2",
+          "name_cn": "芽针种子",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_2",
+          "name_cn": "芽针",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "pool_liquid_plant_grass_2_1",
+      "machine": {
+        "building_id": "mix_pool_1",
+        "name": "反应池",
+        "size": "5x5x5",
+        "model_height": 5.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_powder_2",
+          "name_cn": "芽针粉末",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_liquid_plant_grass_2",
+          "name_cn": "芽针溶液",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_grass_2_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_2",
+          "name_cn": "芽针",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_seed_2",
+          "name_cn": "芽针种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_grass_powder_2_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_2",
+          "name_cn": "芽针",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_powder_2",
+          "name_cn": "芽针粉末",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_4_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_bottle",
+          "name_cn": "钢质瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_plant_grass_2",
+          "name_cn": "芽针溶液",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_4",
+          "name_cn": "芽针针剂",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_4_2",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_liquid_plant_grass_2",
+          "name_cn": "芽针溶液",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_4",
+          "name_cn": "芽针针剂",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_sp_2",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_sp_2",
+          "name_cn": "苦叶椒",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_sp_seed_2",
+          "name_cn": "苦叶椒种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_rec_hp_1_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_glass_bottle",
+          "name_cn": "紫晶质瓶",
+          "count": 5,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_1",
+          "name_cn": "荞花粉末",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_rec_hp_1",
+          "name_cn": "荞愈胶囊",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_moss_1_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_seed_1",
+          "name_cn": "荞花种子",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_1",
+          "name_cn": "荞花",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_moss_1_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_1",
+          "name_cn": "荞花",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_seed_1",
+          "name_cn": "荞花种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_moss_powder_1_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_moss_1",
+          "name_cn": "荞花",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_moss_powder_1",
+          "name_cn": "荞花粉末",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_iron_nugget_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_ore",
+          "name_cn": "蓝铁矿",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_iron_nugget_2",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_powder",
+          "name_cn": "蓝铁粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_iron_nugget_3",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_ore",
+          "name_cn": "蓝铁矿",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 2
+        },
+        {
+          "item_id": "item_liquid_sewage",
+          "name_cn": "污水",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_iron_bottle_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 2,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_bottle",
+          "name_cn": "蓝铁瓶",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_iron_powder_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_powder",
+          "name_cn": "蓝铁粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "winder_equip_script_2",
+      "machine": {
+        "building_id": "winder_1",
+        "name": "装备原件机",
+        "size": "6x4x4",
+        "model_height": 4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_shell",
+          "name_cn": "晶体外壳",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_equip_script_2",
+          "name_cn": "蓝铁装备原件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_copper_nugget_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_copper_ore",
+          "name_cn": "赤铜矿",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_copper_nugget",
+          "name_cn": "赤铜块",
+          "count": 1
+        },
+        {
+          "item_id": "item_liquid_sewage",
+          "name_cn": "污水",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_copper_jar_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_copper_nugget",
+          "name_cn": "赤铜块",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_copper_jar",
+          "name_cn": "赤铜罐",
+          "count": 1
+        },
+        {
+          "item_id": "item_liquid_sewage",
+          "name_cn": "污水",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "winder_equip_script_4",
+      "machine": {
+        "building_id": "winder_1",
+        "name": "装备原件机",
+        "size": "6x4x4",
+        "model_height": 4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_enr",
+          "name_cn": "密制晶体",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_copper_nugget",
+          "name_cn": "赤铜块",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_equip_script_4",
+          "name_cn": "赤铜装备原件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_bbflower_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_bbflower_1",
+          "name_cn": "酮化灌木",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_bbflower_seed_1",
+          "name_cn": "酮化树种",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_bbflower_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_bbflower_seed_1",
+          "name_cn": "酮化树种",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_bbflower_1",
+          "name_cn": "酮化灌木",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_bbflower_powder_1_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_bbflower_1",
+          "name_cn": "酮化灌木",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_bbflower_powder_1",
+          "name_cn": "酮化灌木粉末",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_sp_4",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_sp_4",
+          "name_cn": "金石稻",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_sp_seed_4",
+          "name_cn": "金石稻种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "component_iron_enr_cmpt_1",
+      "machine": {
+        "building_id": "component_mc_1",
+        "name": "配件机",
+        "size": "3x3x4",
+        "model_height": 3.5,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr",
+          "name_cn": "钢块",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_enr_cmpt",
+          "name_cn": "钢制零件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_iron_enr_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_powder",
+          "name_cn": "致密蓝铁粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_enr",
+          "name_cn": "钢块",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_iron_enr_bottle_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr",
+          "name_cn": "钢块",
+          "count": 2,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_enr_bottle",
+          "name_cn": "钢质瓶",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_iron_enr_jar_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr",
+          "name_cn": "钢块",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_liquid_sewage",
+          "name_cn": "污水",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "component_iron_cmpt_1",
+      "machine": {
+        "building_id": "component_mc_1",
+        "name": "配件机",
+        "size": "3x3x4",
+        "model_height": 3.5,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_nugget",
+          "name_cn": "蓝铁块",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_iron_cmpt",
+          "name_cn": "铁制零件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "component_copper_cmpt_1",
+      "machine": {
+        "building_id": "component_mc_1",
+        "name": "配件机",
+        "size": "3x3x4",
+        "model_height": 3.5,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_copper_nugget",
+          "name_cn": "赤铜块",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_copper_cmpt",
+          "name_cn": "铜制零件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "planter_plant_grass_1_1",
+      "machine": {
+        "building_id": "planter_1",
+        "name": "种植机",
+        "size": "5x5x4",
+        "model_height": 4.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_seed_1",
+          "name_cn": "锦草种子",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_1",
+          "name_cn": "锦草",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "pool_liquid_plant_grass_1_1",
+      "machine": {
+        "building_id": "mix_pool_1",
+        "name": "反应池",
+        "size": "5x5x5",
+        "model_height": 5.1,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_powder_1",
+          "name_cn": "锦草粉末",
+          "count": 1,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_water",
+          "name_cn": "清水",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_liquid_plant_grass_1",
+          "name_cn": "锦草溶液",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "seedcollector_plant_grass_1_1",
+      "machine": {
+        "building_id": "seedcollector_1",
+        "name": "采种机",
+        "size": "5x5x4",
+        "model_height": 3.3,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_1",
+          "name_cn": "锦草",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_seed_1",
+          "name_cn": "锦草种子",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "grinder_plant_grass_powder_1_1",
+      "machine": {
+        "building_id": "grinder_1",
+        "name": "粉碎机",
+        "size": "3x3x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_plant_grass_1",
+          "name_cn": "锦草",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_plant_grass_powder_1",
+          "name_cn": "锦草粉末",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_4_1",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_bottle",
+          "name_cn": "钢质瓶",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_liquid_plant_grass_1",
+          "name_cn": "锦草溶液",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_4",
+          "name_cn": "锦草软饮",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "filling_bottled_food_4_2",
+      "machine": {
+        "building_id": "filling_powder_mc_1",
+        "name": "灌装机",
+        "size": "6x4x4",
+        "model_height": 3.4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_liquid_plant_grass_1",
+          "name_cn": "锦草溶液",
+          "count": 5,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_bottled_food_4",
+          "name_cn": "锦草软饮",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "tools_proc_battery_3_1",
+      "machine": {
+        "building_id": "tools_assebling_mc_1",
+        "name": "封装机",
+        "size": "6x4x4",
+        "model_height": 2.9,
+        "power_consume": 30,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_iron_enr_cmpt",
+          "name_cn": "钢制零件",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_originium_enr_powder",
+          "name_cn": "致密源石粉末",
+          "count": 20,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_proc_battery_3",
+          "name_cn": "高容电池",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "thickener_quartz_enr_powder_1",
+      "machine": {
+        "building_id": "thickener_1",
+        "name": "研磨机",
+        "size": "6x4x5",
+        "model_height": 4.9,
+        "power_consume": 20,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_powder",
+          "name_cn": "紫晶粉末",
+          "count": 2,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_plant_moss_powder_3",
+          "name_cn": "砂叶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_quartz_enr_powder",
+          "name_cn": "高晶粉末",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "furnance_quartz_enr_1",
+      "machine": {
+        "building_id": "furnance_1",
+        "name": "精炼炉",
+        "size": "3x3x4",
+        "model_height": 3.94,
+        "power_consume": 5,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_enr_powder",
+          "name_cn": "高晶粉末",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_quartz_enr",
+          "name_cn": "高晶纤维",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "winder_equip_script_3",
+      "machine": {
+        "building_id": "winder_1",
+        "name": "装备原件机",
+        "size": "6x4x4",
+        "model_height": 4,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_crystal_enr",
+          "name_cn": "密制晶体",
+          "count": 10,
+          "is_intermediate": false
+        },
+        {
+          "item_id": "item_quartz_enr",
+          "name_cn": "高晶纤维",
+          "count": 10,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_equip_script_3",
+          "name_cn": "高晶装备原件",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "shaper_glass_enr_bottle_1",
+      "machine": {
+        "building_id": "shaper_1",
+        "name": "塑形机",
+        "size": "3x3x4",
+        "model_height": 3.2,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_enr",
+          "name_cn": "高晶纤维",
+          "count": 2,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_glass_enr_bottle",
+          "name_cn": "高晶质瓶",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "recipe_id": "component_glass_enr_cmpt_1",
+      "machine": {
+        "building_id": "component_mc_1",
+        "name": "配件机",
+        "size": "3x3x4",
+        "model_height": 3.5,
+        "power_consume": 10,
+        "power_generate": 0,
+        "need_power": true,
+        "bandwidth": 2
+      },
+      "ingredients": [
+        {
+          "item_id": "item_quartz_enr",
+          "name_cn": "高晶纤维",
+          "count": 1,
+          "is_intermediate": false
+        }
+      ],
+      "outcomes": [
+        {
+          "item_id": "item_glass_enr_cmpt",
+          "name_cn": "高晶零件",
+          "count": 1
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_recipes": 94
+  }
+}
